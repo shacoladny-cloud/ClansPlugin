@@ -1,0 +1,8 @@
+name: ClansPlugin
+version: 1.0.0
+main: com.artic.clans.bukkit.ClanPlugin
+api-version: 1.21
+commands:
+  clan:
+    description: Главная команда кланов
+    usage: /clan

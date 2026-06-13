@@ -1,0 +1,2 @@
+rootProject.name = 'ClansPlugin'
+include 'clans-api', 'clans-bukkit', 'clans-velocity'

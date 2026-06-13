@@ -1,0 +1,25 @@
+plugins {
+    id 'java-library'
+    id 'io.papermc.paperweight.userdev' version '1.5.11' apply false
+}
+
+allprojects {
+    apply plugin: 'java-library'
+    group = 'com.artic.clans'   // замените на свой group id
+    version = '1.0.0'
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://repo.papermc.io/repository/maven-public/' }
+        maven { url 'https://oss.sonatype.org/content/groups/public/' }
+        maven { url 'https://repo.codemc.io/repository/maven-public/' }
+    }
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+    }
+}
