@@ -2,6 +2,19 @@
 
 Асинхронная кросс-серверная система кланов для Minecraft Paper 1.21.1.
 
+```markdown
+## 🏗️ Архитектура
+```mermaid
+flowchart LR
+    Player --> Velocity
+    Velocity --> Redis
+    Velocity --> Server1[Paper сервер 1]
+    Velocity --> Server2[Paper сервер 2]
+    Server1 --> MySQL
+    Server2 --> MySQL
+    Redis --> Server1
+    Redis --> Server2
+
 ## 🛠️ Технологии
 - Java 21
 - Paper API
