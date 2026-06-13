@@ -2,9 +2,9 @@
 
 Асинхронная кросс-серверная система кланов для Minecraft Paper 1.21.1.
 
-```markdown
+
 ## 🏗️ Архитектура
-```mermaid
+
 flowchart LR
     Player --> Velocity
     Velocity --> Redis
